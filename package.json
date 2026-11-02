@@ -1,0 +1,25 @@
+{
+  "name": "homesplit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HomeSplit — Shared Bill Splitter. A full-stack SDE internship assignment built with Hono, Cloudflare Workers + D1, React, Vite, and TanStack Router.",
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "install:all": "pnpm install",
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "db:migrate": "pnpm --filter @homesplit/api db:migrate",
+    "db:migrate:local": "pnpm --filter @homesplit/api db:migrate:local"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

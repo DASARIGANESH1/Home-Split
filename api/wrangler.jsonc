@@ -1,0 +1,22 @@
+{
+  "name": "homesplit-db",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "homesplit-db",
+      "database_id": "LOCAL_PLACEHOLDER",
+      "migrations_dir": "migrations",
+      "migrations_table": "_migrations"
+    }
+  ],
+  "vars": {
+    "CORS_ORIGIN": "*",
+    "ENVIRONMENT": "development"
+  }
+}
